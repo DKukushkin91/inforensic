@@ -1,0 +1,73 @@
+@use "@shared/styles/tokens";
+@use "@shared/styles/mixins";
+
+.strong {
+  margin-top: 12rem;
+  display: block;
+}
+
+.rowHeaderText {
+  color: tokens.$text-secondary-dark;
+}
+
+.list {
+  margin: 8rem 0 0;
+  display: grid;
+  row-gap: 8rem;
+  list-style: none;
+  padding: 0;
+}
+
+.secondaryLightText {
+  color: tokens.$text-secondary-light;
+
+  &::before {
+    content: " ● ";
+  }
+
+  @include mixins.lg {
+    display: block;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.vehicles {
+  display: grid;
+  row-gap: 8rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.vehicle {
+  display: grid;
+  row-gap: 4rem;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid tokens.$border-section;
+    padding-bottom: 8rem;
+  }
+}
+
+.vehicleReleaseYear {
+  display: flex;
+  width: fit-content;
+  align-items: center;
+  column-gap: 4rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  color: tokens.$text-secondary-light;
+  background-color: tokens.$bg-secondary;
+}
+
+.vehicleReleaseYearText {
+  color: tokens.$text-secondary-dark;
+  line-height: 1;
+}
+
+.secondaryText {
+  color: tokens.$text-secondary;
+}

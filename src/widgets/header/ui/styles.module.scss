@@ -1,0 +1,17 @@
+@use "@shared/styles/vars";
+@use "@shared/styles/tokens";
+
+.header {
+  text-align: center;
+  padding: 12rem;
+  background-color: tokens.$brand-color;
+}
+
+.title {
+  font-family: vars.$secondary-font-family;
+  font-weight: 900;
+  font-size: 16rem;
+  line-height: 1.5;
+  text-transform: uppercase;
+  color: tokens.$white;
+}

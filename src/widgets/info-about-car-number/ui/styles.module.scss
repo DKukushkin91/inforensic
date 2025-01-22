@@ -1,0 +1,36 @@
+@use "@shared/styles/vars";
+@use "@shared/styles/tokens";
+@use "@shared/styles/mixins";
+
+.title {
+  margin-bottom: 12rem;
+}
+
+.secondaryLightText {
+  color: tokens.$text-secondary-light;
+
+  &::before {
+    content: " ● ";
+  }
+
+  @include mixins.lg {
+    display: block;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.strong {
+  margin-top: 40rem;
+  display: block;
+}
+
+.rowHeader {
+  margin-top: 8rem;
+}
+
+.rowHeaderText {
+  color: tokens.$text-secondary-dark;
+}

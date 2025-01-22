@@ -1,0 +1,14 @@
+@use "@shared/styles/tokens";
+
+.layoutSection {
+  padding-bottom: 16rem;
+  width: 100%;
+
+  &.hasBorder {
+    border-bottom: 1px solid tokens.$border-section;
+  }
+
+  &.hasVerticalPaddings {
+    padding: 16rem 0;
+  }
+}

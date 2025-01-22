@@ -1,0 +1,51 @@
+@use "@shared/styles/tokens";
+
+.button {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  font-weight: 500;
+  transition: 0.2s ease;
+
+  &:hover {
+    transition: 0.2s ease;
+  }
+
+  &.primary {
+    color: tokens.$orange;
+
+    &:hover {
+      color: tokens.$orange-hover;
+    }
+  }
+
+  &.secondary {
+    color: tokens.$text-primary-light;
+
+    &:hover {
+      color: tokens.$orange;
+    }
+  }
+
+  &.isFullWidth {
+    width: 100%;
+  }
+
+  &.isActive {
+    color: tokens.$orange;
+    cursor: default;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  &.md {
+    padding: 8rem 0;
+  }
+
+  &.lg {
+    padding: 12rem 0;
+  }
+}

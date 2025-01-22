@@ -1,0 +1,29 @@
+@use "@shared/styles/tokens";
+
+.link {
+  width: fit-content;
+  text-decoration: none;
+  color: tokens.$orange;
+  transition: 0.2s ease;
+  font-weight: 400;
+  line-height: 1.4;
+
+  &:hover {
+    color: tokens.$orange-hover;
+    transition: 0.2s ease;
+  }
+
+  &.md {
+    font-size: 14rem;
+  }
+
+  &.sm {
+    font-size: 12rem;
+    font-weight: 500;
+  }
+
+  &.hasHref {
+    cursor: default;
+    color: tokens.$text-primary-light;
+  }
+}

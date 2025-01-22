@@ -1,0 +1,11 @@
+@use "@shared/styles/tokens";
+
+.label {
+  color: tokens.$text-secondary-light;
+  margin-top: 12rem;
+}
+
+.carNumber {
+  color: tokens.$text-primary-light;
+  margin-top: 4rem;
+}

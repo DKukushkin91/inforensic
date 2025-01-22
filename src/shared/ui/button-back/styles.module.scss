@@ -1,0 +1,20 @@
+@use "@shared/styles/tokens";
+
+.buttonBack {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  color: tokens.$orange;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  font-weight: 500;
+  font-size: 14rem;
+  transition: 0.2s ease;
+  padding: 8rem 0;
+
+  &:hover {
+    color: tokens.$orange-hover;
+    transition: 0.2s ease;
+  }
+}

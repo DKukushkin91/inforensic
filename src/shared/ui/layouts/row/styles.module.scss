@@ -1,0 +1,26 @@
+@use "@shared/styles/tokens";
+
+.layoutsRow {
+  padding: 8rem;
+  border: 1px solid tokens.$border-row;
+  border-bottom: 0;
+
+  &.hasTerm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16rem;
+  }
+
+  &.isLastRow {
+    border-bottom: 1px solid tokens.$border-row;
+  }
+
+  &.isHeader {
+    background-color: tokens.$row-header;
+  }
+}
+
+.term {
+  color: tokens.$text-secondary;
+}
+
